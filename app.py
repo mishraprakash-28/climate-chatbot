@@ -88,7 +88,7 @@ if prompt := st.chat_input("Ask about eco-friendly habits, recycling, climate ac
                     )
 
                 response = client.models.generate_content(
-                    model="model gemini-1.5-flash",
+                    model="gemini-1.5-flash",
                     contents=contents,
                     config=types.GenerateContentConfig(
                         system_instruction=SYSTEM_INSTRUCTION,
